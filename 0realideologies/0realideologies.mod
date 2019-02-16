@@ -1,0 +1,9 @@
+name="0MoreRealisticFix4Ideologies"
+path="mod/0realideologies/"
+tags={
+	"Balance"
+	"Ideologies"
+}
+picture="top.jpg"
+remote_file_id="1426804347"
+supported_version="1.5.*"
