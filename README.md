@@ -15,6 +15,17 @@ For instance,
 Facist can make your own empire great more easyly since the cost of annex in peace conference is less than vanila.
 Democracy has strongest economic and research buff since they are freedom. They can make puppets.
 
+### JP_puppeting_ussr_nonew
+
+* MOD name: +JP Puppetting the USSR (no new states)
+* Available at: this is WIP thus have not been available
+* Version: 1.5.*
+* Note: WIP.
+
+Translation MOD for Puppetting the USSR (no new states) in Japanese.
+Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/?id=1045172533 
+
+
 ### kotonoha_aoi_aide_voice
 
 * MOD name: KotonohaAoi_Voice(aide)
