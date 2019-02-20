@@ -45,3 +45,21 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 ゲーム中の効果音の一部がボイスロイドの琴葉茜ちゃんの声になります．
 副官(adjutant)の名の通り，戦争関係のサウンドが変わります．
+
+
+## LICENSE Exception
+
+Almost this repository is available MIT LICENSE.
+However, some file is exception.
+
+`kotonoha_aoi_aide_voice` and `kotonoha_akane_adjutant_voice` is NOT available under MIT
+since they consist VOICEROID2 wav files and Niijima Akiichi's images and they are not MIT.
+
+
+本リポジトリは基本的にMITライセンスですが，例外があります．
+`kotonoha_aoi_aide_voice` 及び `kotonoha_akane_adjutant_voice`はMITライセンスではありません．
+ここに含まれるボイスロイド２の音声ファイルと新島秋一氏によるイラストはMITライセンスが適用されません．
+
+
+新島秋一．””病ンデる琴葉姉妹立ち絵”．http://seiga.nicovideo.jp/seiga/im5274301
+株式会社AHS．”VOICEROID2 琴葉茜・葵”．https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
