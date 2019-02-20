@@ -60,6 +60,7 @@ since they consist VOICEROID2 wav files and Niijima Akiichi's images and they ar
 `kotonoha_aoi_aide_voice` 及び `kotonoha_akane_adjutant_voice`はMITライセンスではありません．
 ここに含まれるボイスロイド２の音声ファイルと新島秋一氏によるイラストはMITライセンスが適用されません．
 
+### 素材
 
-新島秋一．””病ンデる琴葉姉妹立ち絵”．http://seiga.nicovideo.jp/seiga/im5274301
-株式会社AHS．”VOICEROID2 琴葉茜・葵”．https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
+* 新島秋一．””病ンデる琴葉姉妹立ち絵”．http://seiga.nicovideo.jp/seiga/im5274301
+* 株式会社AHS．”VOICEROID2 琴葉茜・葵”．https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
