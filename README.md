@@ -7,7 +7,7 @@ MODs for Hearts of Iron 4 created by chijan-nh (Steam name: chijan).
 
 * MOD name: 0MoreRealisticFix4Ideologies
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1426804347
-* Version: 1.5.*
+* Version: 1.6.*
 * Note:
 
 To realize more realistic and not boring ideology buff and debuff, I modify them.
@@ -30,7 +30,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: KotonohaAoi_Voice(aide)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
-* Version: 1.5.*
+* Version: 1.6.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉葵ちゃんの声になります．
@@ -40,7 +40,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: KotonohaAkane_Voice(adjutant)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005381
-* Version: 1.5.*
+* Version: 1.6.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉茜ちゃんの声になります．
