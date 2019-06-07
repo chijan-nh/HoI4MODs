@@ -7,7 +7,7 @@ MODs for Hearts of Iron 4 created by chijan-nh (Steam name: chijan).
 
 * MOD name: 0MoreRealisticFix4Ideologies
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1426804347
-* Version: 1.6.*
+* Version: 1.7.*
 * Note:
 
 To realize more realistic and not boring ideology buff and debuff, I modify them.
@@ -19,7 +19,7 @@ Democracy has strongest economic and research buff since they are freedom. They 
 
 * MOD name: +JP Puppetting the USSR (no new states)
 * Available at: this is WIP thus have not been available
-* Version: 1.5.*
+* Version: 1.7.*
 * Note: WIP.
 
 Translation MOD for Puppetting the USSR (no new states) in Japanese.
@@ -30,7 +30,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: KotonohaAoi_Voice(aide)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
-* Version: 1.6.*
+* Version: 1.7.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉葵ちゃんの声になります．
@@ -40,7 +40,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: KotonohaAkane_Voice(adjutant)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005381
-* Version: 1.6.*
+* Version: 1.7.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉茜ちゃんの声になります．
