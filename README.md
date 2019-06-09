@@ -25,6 +25,18 @@ Democracy has strongest economic and research buff since they are freedom. They 
 Translation MOD for Puppetting the USSR (no new states) in Japanese.
 Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/?id=1045172533 
 
+### fixJapanSouthDoctrine
+
+* MOD name: FixJapanSouthDoctrine
+* Available at:
+* Version: 1.7.*
+* Note:
+
+The vanilla has low reproducibility of the Southward Expansion Theory of the Empire of Japan.
+In the summer, Japan declared war on the United States and did not tolerate the German and Italian colonies.
+
+In this MOD, the timing of Japan's acquisition of the "Securing the Philippines" focus is adjusted,
+and Japan will not declare war on the southern resource areas if they are neutralist or fascist.
 
 ### kotonoha_aoi_aide_voice
 
