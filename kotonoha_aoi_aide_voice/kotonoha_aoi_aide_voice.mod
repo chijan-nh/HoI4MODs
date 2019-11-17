@@ -1,4 +1,4 @@
-﻿name="KotonohaAoi_Voice(aide)"
+name="KotonohaAoi_Voice(aide)"
 path="mod/kotonoha_aoi_aide_voice/"
 tags={
 	"Sound"
