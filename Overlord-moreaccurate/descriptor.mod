@@ -1,0 +1,11 @@
+version="1.9.*"
+tags={
+	"Military"
+	"Historical"
+	"Ideologies"
+	"Gameplay"
+	"Balance"
+	"Map"
+}
+name="Overlord-moreaccurate"
+supported_version="1.9.*"

@@ -1,0 +1,249 @@
+leader_attack_skills = {
+
+	### NAVY ###
+	11 = {
+		cost = 76800
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.55
+		}
+	}
+
+	12 = {
+		cost = 102400
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.60
+		}
+	}
+
+	13 = {
+		cost = 128000
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.65
+		}
+	}
+
+	14 = {
+		cost = 153600
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.70
+		}
+	}
+
+	15 = {
+		cost = 179200
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.75
+		}
+	}
+
+	16 = {
+		cost = 204800
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.80
+		}
+	}
+
+	17 = {
+		cost = 230400
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.85
+		}
+	}
+
+	18 = {
+		cost = 256000
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.90
+		}
+	}
+
+	19 = {
+		cost = 281600
+		type = navy
+		modifier = {
+			naval_damage_factor = 0.95
+		}
+	}
+	
+	20 = {
+		cost = 307200
+		type = navy
+		modifier = {
+			naval_damage_factor = 1.00
+		}
+	}
+
+	### Corps Commander ###
+	11 = {
+		cost = 76800
+		type = corps_commander
+		modifier = {
+			offence = 0.55
+		}
+	}
+		
+	12 = {
+		cost = 102400
+		type = corps_commander
+		modifier = {
+			offence = 0.60
+		}
+	}
+	
+	
+	13 = {
+		cost = 128000
+		type = corps_commander
+		modifier = {
+			offence = 0.65
+		}
+	}
+	
+	14 = {
+		cost = 153600
+		type = corps_commander
+		modifier = {
+			offence = 0.70
+		}
+	}
+	
+	15 = {
+		cost = 179200
+		type = corps_commander
+		modifier = {
+			offence = 0.75
+		}
+	}
+
+	16 = {
+		cost = 204800
+		type = corps_commander
+		modifier = {
+			offence = 0.80
+		}
+	}
+
+	17 = {
+		cost = 230400
+		type = corps_commander
+		modifier = {
+			offence = 0.85
+		}
+	}
+
+	18 = {
+		cost = 256000
+		type = corps_commander
+		modifier = {
+			offence = 0.90
+		}
+	}
+
+	19 = {
+		cost = 281600
+		type = corps_commander
+		modifier = {
+			offence = 0.95
+		}
+	}
+	
+	20 = {
+		cost = 307200
+		type = corps_commander
+		modifier = {
+			offence = 1.00
+		}
+	}
+	
+	
+	### Field Marshal ###
+	11 = {
+		cost = 76800
+		type = field_marshal
+		modifier = {
+			offence = 0.55
+		}
+	}
+	
+	
+	12 = {
+		cost = 102400
+		type = field_marshal
+		modifier = {
+			offence = 0.60
+		}
+	}
+	
+	
+	13 = {
+		cost = 128000
+		type = field_marshal
+		modifier = {
+			offence = 0.65
+		}
+	}
+	
+	14 = {
+		cost = 153600
+		type = field_marshal
+		modifier = {
+			offence = 0.70
+		}
+	}
+	
+	15 = {
+		cost = 179200
+		type = field_marshal
+		modifier = {
+			offence = 0.75
+		}
+	}
+
+	16 = {
+		cost = 204800
+		type = field_marshal
+		modifier = {
+			offence = 0.80
+		}
+	}	
+
+	17 = {
+		cost = 230400
+		type = field_marshal
+		modifier = {
+			offence = 0.85
+		}
+	}	
+
+	18 = {
+		cost = 256000
+		type = field_marshal
+		modifier = {
+			offence = 0.90
+		}
+	}	
+
+	19 = {
+		cost = 281600
+		type = field_marshal
+		modifier = {
+			offence = 0.95
+		}
+	}	
+	
+	20 = {
+		cost = 307200
+		type = field_marshal
+		modifier = {
+			offence = 1.00
+		}
+	}
+}

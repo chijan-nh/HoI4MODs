@@ -1,0 +1,93 @@
+leader_maneuvering_skills = {
+
+	### NAVY ###
+	11 = {
+		cost = 76800
+		type = navy
+		modifier = {
+			positioning = 0.275
+			naval_retreat_speed = 0.11
+		}
+	}
+
+	12 = {
+		cost = 102400
+		type = navy
+		modifier = {
+			positioning = 0.3
+			naval_retreat_speed = 0.12
+		}
+	}
+
+	13 = {
+		cost = 128000
+		type = navy
+		modifier = {
+			positioning = 0.325
+			naval_retreat_speed = 0.13
+		}
+	}
+
+	14 = {
+		cost = 153600
+		type = navy
+		modifier = {
+			positioning = 0.35
+			naval_retreat_speed = 0.14
+		}
+	}
+
+	15 = {
+		cost = 179200
+		type = navy
+		modifier = {
+			positioning = 0.375
+			naval_retreat_speed = 0.15
+		}
+	}
+
+	16 = {
+		cost = 204800
+		type = navy
+		modifier = {
+			positioning = 0.4
+			naval_retreat_speed = 0.16
+		}
+	}
+
+	17 = {
+		cost = 230400
+		type = navy
+		modifier = {
+			positioning = 0.425
+			naval_retreat_speed = 0.17
+		}
+	}
+
+	18 = {
+		cost = 256000
+		type = navy
+		modifier = {
+			positioning = 0.45
+			naval_retreat_speed = 0.18
+		}
+	}
+
+	19 = {
+		cost = 281600
+		type = navy
+		modifier = {
+			positioning = 0.475
+			naval_retreat_speed = 0.19
+		}
+	}
+	
+	20 = {
+		cost = 307200
+		type = navy
+		modifier = {
+			positioning = 0.5
+			naval_retreat_speed = 0.2
+		}
+	}
+}
