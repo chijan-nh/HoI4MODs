@@ -1,0 +1,196 @@
+ideas = {
+	country = {
+		russian_monarchy = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.30
+				conscription = 0.005
+			}
+		}
+	}
+	political_advisor = {
+
+		generic_captain_of_industry_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		generic_war_industrialist_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		generic_army_chief_off_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		generic_navy_chief_decisive_bat_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		generic_navy_anti_submarine_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		generic_air_close_air_sup_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+		generic_army_art_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		generic_army_log_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer_2 = {
+
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+	theorist = {
+
+		generic_military_theorist_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist_2 = {
+			
+			allowed = {
+				OR = { original_tag = SIB original_tag = MSK original_tag = TKS original_tag = KAU original_tag = WSI original_tag = OSI original_tag = CSI original_tag = PRM original_tag = MOL original_tag = RDW }
+			}
+			
+			research_bonus = {
+				air_warfare_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+# }

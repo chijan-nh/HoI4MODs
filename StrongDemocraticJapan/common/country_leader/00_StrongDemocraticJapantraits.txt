@@ -1,0 +1,12 @@
+leader_traits = {
+	emperor_showa = {
+		random = no
+		stability_factor = 0.6 #FOR THE EMPERAH
+		surrender_limit = 0.15
+		army_core_attack_factor = 0.4
+		army_core_defence_factor = 0.4
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

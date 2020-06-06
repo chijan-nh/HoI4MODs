@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_jap_wpto"
+		texturefile = "gfx/interface/ideas/jap_wpto.dds"
+	}
+
+}

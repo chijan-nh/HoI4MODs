@@ -262,12 +262,13 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.5
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.10
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
 				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				global_building_slots_factor = 0.2
 			}
 		}
 
@@ -550,6 +551,11 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 3
 				send_volunteer_divisions_required = -1
+				target_modifier = {
+					tag = SOV
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}
 			}
 		}
 
@@ -1126,7 +1132,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				democratic_drift = 0.1
+				democratic_drift = 0.3
 			}
 		}
 
@@ -1226,12 +1232,198 @@ ideas = {
 				}
 			}
 		}
-		JAP_wpto_focus = {
+
+		#added_by_this_mod
+
+		JAP_jap_intelligence_tie = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			available = {
+				is_in_faction_with = ENG
+			}
+
+			removal_cost = -1
+
+			picture = received_attache
+
+			modifier = {
+				decryption_factor = 0.3
+				encryption_factor = 0.3
+				intel_network_gain_factor = 0.5
+				intelligence_agency_defense = 2
+				resistance_target = -0.2
+				compliance_gain = 0.1
+			}
+		}
+
+		JAP_eng_intelligence_tie = {
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			available = {
+				is_in_faction_with = JAP
+			}
+
+			removal_cost = -1
+
+			picture = received_attache
+
+			modifier = {
+				decryption_factor = 0.3
+				encryption_factor = 0.3
+				intel_network_gain_factor = 0.5
+				intelligence_agency_defense = 2
+				resistance_target = -0.2
+				compliance_gain = 0.1
+			}
+		}
+
+		JAP_path_to_europe_focus = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			available = {
+				is_in_faction_with = ENG
+			}
+
+			picture = generic_coastal_defense_ships2
+
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				spotting_chance = 0.25
+				naval_hit_chance = 0.05
+				naval_coordination = 0.05
+				navy_submarine_detection_factor = 0.25
+				navy_max_range_factor = 0.25
+				naval_equipment_upgrade_xp_cost = -0.5
+				navy_refit_speed = 0.5
+				navy_refit_ic_cost = -0.5
+			}
+		}
+
+		JAP_anti_fascist_operation = {
+
+			#name = JAP_anti_fascist_operation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_banned
+			
+			modifier = {
+				#send_volunteer_size = 3
+				#send_volunteer_divisions_required = -1
+				offensive_war_stability_factor = 0.2
+				defensive_war_stability_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+
+		JAP_anti_fascist_operation_boosted = {
+
+			#name = JAP_anti_fascist_operation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fascism_banned
+			
+			modifier = {
+				#send_volunteer_size = 3
+				#send_volunteer_divisions_required = -1
+				offensive_war_stability_factor = 0.4
+				defensive_war_stability_factor = 0.4
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.30
+				defense_bonus_against = 0.30
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.30
+				defense_bonus_against = 0.30
+			}
+		}
+
+		JAP_guard_democratic = {
+
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			available = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			rule = {
+				#can_join_opposite_factions = no
+				#can_create_factions = yes
+				can_declare_war_on_same_ideology = yes
+				can_only_justify_war_on_threat_country = no
+				can_puppet = yes
+				can_create_collaboration_government = yes
+			}
+
+			modifier = {
+				fascism_drift = -0.10
+				communism_drift = -0.10
+				#master_ideology_drift = 0.10
+			}
+		}
+
+		JAP_true_hakko_ichiu_focus = {
 	
 			allowed = {
 				original_tag = JAP
 				always = no
 			}
+
+			available = {
+				is_faction_leader = yes
+				is_subject = no
+			}
+
+			cancel = { is_faction_leader = no }
 
 			allowed_civil_war = {
 				always = yes
@@ -1239,8 +1431,8 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = jap_wpto
-			
+			picture = jap_militarism_showa
+
 			modifier = {		
 				justify_war_goal_time = -0.5
 				generate_wargoal_tension = -0.8
@@ -1248,8 +1440,142 @@ ideas = {
 				guarantee_cost = -0.5
 				defensive_war_stability_factor = 0.4
 				offensive_war_stability_factor = 0.2
-				conscription = 0.01
-				resistance_damage_to_garrison = -0.1 
+				conscription = 0.015
+				resistance_damage_to_garrison = -0.1
+				subjects_autonomy_gain = 0.1
+				compliance_gain = 0.3
+				resistance_target = -0.1
+			}
+
+			#hidden_effect = {
+			#	subjects_autonomy_gain = 0.1
+			#}
+		}
+
+		JAP_whiteism_fascism_drift = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.2
+				drift_defence_factor = -0.25
+			}
+		}
+
+		JAP_whiteism_menace_drift = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.2
+				fascism_drift = -0.2
+				communism_drift = -0.1
+			}
+		}
+
+		JAP_support_for_india = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+
+			modifier = {
+				democratic_drift = 0.05
+				autonomy_gain = 2.0
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.29
+				political_power_cost = 0.1
+			}
+		}
+
+		JAP_remaining_eng_interests = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.25
+			}
+		}
+
+		JAP_interests_in_raj = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.25
+			}
+		}
+
+		JAP_rapid_economic_growth_focus = {
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_manpower_for_recruit_change_to = {
+				    value < 0.10
+				    group = mobilization_laws
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_increase
+
+			modifier = {
+				global_building_slots_factor = 0.30
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				political_power_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+
+		JAP_scitech_intensive_nation = {
+			allowed = {
+				allowed = no
+			}
+
+			available = {
+				has_manpower_for_recruit_change_to = {
+				    value < 0.10
+				    group = mobilization_laws
+				}
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.10
 			}
 		}
 	}
