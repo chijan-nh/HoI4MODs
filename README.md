@@ -29,7 +29,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: FixJapanSouthDoctrine
 * Available at:
-* Version: 1.7.*
+* Version: 1.9.*
 * Note:
 
 The vanilla has low reproducibility of the Southward Expansion Theory of the Empire of Japan.
@@ -42,7 +42,7 @@ and Japan will not declare war on the southern resource areas if they are neutra
 
 * MOD name: KotonohaAoi_Voice(aide)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
-* Version: 1.7.*
+* Version: 1.9.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉葵ちゃんの声になります．
@@ -52,7 +52,7 @@ and Japan will not declare war on the southern resource areas if they are neutra
 
 * MOD name: KotonohaAkane_Voice(adjutant)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005381
-* Version: 1.7.*
+* Version: 1.9.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉茜ちゃんの声になります．
