@@ -3,6 +3,18 @@ MODs for Hearts of Iron 4 created by chijan-nh (Steam name: chijan).
 
 ## Descriptions each MOD
 
+### +ENG_StrongDemocraticJapan
+
+* MOD name: +ENG_StrongDemocraticJapan
+* Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=2123909437
+* Version 1.9.*
+* Note: The StrongDemocraticJapan mod must be activated simultaneously.
+
+This is a translation mod for StrongDemocraticJapan (as mentioned below).
+This mod has only localization files.
+
+I tested that I activated only StrongDemocraticJapan and its +ENG mod, NOT including Japanese Language Mod, and then the game correctly ran in version 1.9.3.
+
 ### 0realideologies
 
 * MOD name: 0MoreRealisticFix4Ideologies
@@ -18,12 +30,35 @@ Democracy has strongest economic and research buff since they are freedom. They 
 ### JP_puppeting_ussr_nonew
 
 * MOD name: +JP Puppetting the USSR (no new states)
-* Available at: this is WIP thus have not been available
+* Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1763817482
 * Version: 1.7.*
 * Note: WIP.
 
 Translation MOD for Puppetting the USSR (no new states) in Japanese.
 Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/?id=1045172533 
+
+### StrongDemocraticJapan
+
+* MOD name: StrongDemocraticJapan
+* Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=2120228453
+* Version: 1.9.*
+* Note: 
+
+The Democratic Japan Root is boring in the vanilla since its NFs are weak and few.
+
+This mod reinforces the Democratic Japanese Root by adding many national focuses and ideas.
+The English translation mod is as +ENG_StrongDemocraticJapan.
+
+### fixAroundMaginot
+
+* MOD name: FixAroundMaginot
+* Available at:
+* Version: 1.9.*
+* Note:
+
+In the vanilla, Nazi-Geramny attacks the Netherlands even if it does not have war with France. If France is not enemy for Germany, why they avoid the Maginot line??
+
+In this mod, the "Around the Maginot" NF cannot be started if Germany does not have war with France (like Operation Weserübung).
 
 ### fixJapanSouthDoctrine
 
@@ -35,8 +70,9 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 The vanilla has low reproducibility of the Southward Expansion Theory of the Empire of Japan.
 In the summer, Japan declared war on the United States and did not tolerate the German and Italian colonies.
 
-In this MOD, the timing of Japan's acquisition of the "Securing the Philippines" focus is adjusted,
+In this MOD, the timing of Japan's acquisition of the "Securing the Philippines" focus is adjusted (not working...),
 and Japan will not declare war on the southern resource areas if they are neutralist or fascist.
+
 
 ### kotonoha_aoi_aide_voice
 
