@@ -1,4 +1,5 @@
 ﻿l_english:
+ JAP_west_pacific_treaty_organization_tt:0 "ルールを設定: £trigger_yes£ 同じイデオロギーの国家に宣戦布告可能 \nルールを設定: £trigger_yes£ 国際緊張を高めていない国家に宣戦布告可能 \nルールを設定: £trigger_yes£ 傀儡国を作成可能 \nルールを設定: £trigger_yes£ 協力政府を作成可能"
  JAP_jap_eng_intelligence_tie:0 "日英諜報協定"
  JAP_jap_eng_intelligence_tie_desc:0 "欧州のイギリスとアジアの日本。互いに情報交換することでより有利に諜報戦を運べるだろう。"
  JAP_secret_weapons:0 "秘密兵器"
@@ -23,6 +24,7 @@
  JAP_preemptive_war_2_desc:0 "ソ連の存在は我々の新しい生活様式に脅威を与え続けている。 \n 最早これを黙認する余地はなく、脅威に対する先制反撃が必要だ。"
  JAP_integrate_karafuto:0 "樺太の統合"
  JAP_integrate_karafuto_desc:0 "ついに樺太全土を確保するに至った。交換条約以来、 \n かの地を追われてきた同胞が故郷を奪還するときが来たのだ。"
+ JAP_integrate_karafuto_state_name:0 "北樺太"
  JAP_desolve_ussr:0 "ソ連解体"
  JAP_desolve_ussr_desc:0 "沿海州の枢要を制した我々はこの地をソ連から分離し、極東の少数民族のための国家建設にあてがうことができる。他の地域でも同様の準備をし、社会主義の連邦に終止符を打とう。"
  JAP_desolve_ussr_tt:0 "沿海州の他、シベリア、トルキスタン、カフカース、モスコヴィエンを戦後解放可能になり、クリミアがウクライナの中核州となる。"
@@ -54,7 +56,7 @@
  JAP_the_fugu_plan:0 "河豚計画"
  JAP_the_fugu_plan_desc:0 "ナチス・ドイツを始めとしたいくつかの欧州国家でユダヤ人は極めて過酷な迫害を受けている。彼らが国際政治や世界経済に及ぼす影響は小さくないため、難民として受け入れることが人道的にも国益としても正しいだろう。"
  JAP_befriend_with_usa:0 "アメリカとの友好"
- JAP_befriend_with_usa_desc:0 "河豚計画によるユダヤ人保護の成果として米国におけるロビー活動が挙げられる。彼らを通じてアメリカの対日政策を友好的なものに転換させられるだろう。"
+ JAP_befriend_with_usa_desc:0 "河豚計画によるユダヤ人保護の成果として米国におけるロビー活動が挙げられる。我々が民主主義を尊重し、満州の門戸開放と民主化も成し遂げられた今日であれば、彼らを通じてアメリカの対日政策を友好的なものに転換させられるだろう。"
  JAP_north_japan_effort:0 "北日本への注力"
  JAP_north_japan_effort_desc:0 "南樺太、千島列島、北海道、そして東北地方。 \n 軍国主義者が植民地よりも軽視した本土の「地方」を今こそ再開発するべきである。"
  JAP_east_japan_effort:0 "東日本への注力"
