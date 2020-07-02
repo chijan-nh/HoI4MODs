@@ -111,4 +111,4 @@ since they consist VOICEROID2 wav files and Niijima Akiichi's images and they ar
 ### 素材
 
 * 新島秋一．””病ンデる琴葉姉妹立ち絵”．http://seiga.nicovideo.jp/seiga/im5274301
-* 株式会社AHS．”VOICEROID2 琴葉茜・葵”．hthttps://www.ah-soft.com/voiceroid/kotonoha/
+* 株式会社AHS．”VOICEROID2 琴葉茜・葵”．http://www.ah-soft.com/voiceroid/kotonoha/
