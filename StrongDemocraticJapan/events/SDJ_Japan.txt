@@ -1,0 +1,617 @@
+###########################
+# Japanese Events of SDJ Mod
+###########################
+
+add_namespace = sdj_japan
+
+# Pre Emptive Corp - Begins
+country_event = {
+	id = sdj_japan.1 #sdj_preemptivecorp.1
+	title = sdj_japan.1.t #sdj_preemptivecorp.1.t
+	desc = sdj_japan.1.d #sdj_preemptivecorp.1.d
+	picture = GFX_report_event_japanese_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sdj_japan.1.a
+		custom_effect_tooltip = sdj_japan.1.tt
+		custom_effect_tooltip = sdj_japan.1.tt2
+	}
+}
+
+# Pre Emptive Corp - Support from Zaibatsu (if Zaibatsu NF is completed)
+country_event = {
+	id = sdj_japan.2
+	title = sdj_japan.2.t
+	desc = sdj_japan.2.d
+	picture = GFX_report_event_japan_europe_pact
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_ally_with_the_zaibatsus
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.2.a
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 2 }
+	}
+}
+
+# Pre Emptive Corp - Trial of Military minister active military system
+country_event = {
+	id = sdj_japan.3
+	title = sdj_japan.3.t
+	desc = sdj_japan.3.d
+	picture = GFX_report_event_japanese_officers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { #purge terauchi hisaichi
+		ai_chance = {
+			factor = 80
+		}
+		name = sdj_japan.3.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = hisaichi_terauchi
+		custom_effect_tooltip = remove_chief_of_army
+		remove_unit_leader = 801 #terauchi hisaichi
+		set_country_flag = military_minister_is_civilian
+		JAP_interservice_rivalry_towards_navy = yes
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -50
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.05
+						}
+		hidden_effect = {
+			remove_ideas = hisaichi_terauchi
+		}
+	}
+	option = { #remain military minister allows not active general
+		ai_chance = {
+			factor = 20
+		}
+		name = sdj_japan.3.b
+		add_popularity = {
+						    ideology = neutrality
+						    popularity = 0.15
+						}
+		set_country_flag = military_minister_allows_not_active
+		custom_effect_tooltip = sdj_japan.1.tt #political confusion occurs!
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = sdj_japan.3.c
+		add_political_power = 50
+		add_popularity = {
+						    ideology = fascism
+						    popularity = 0.15
+						}
+		set_country_flag = military_minister_is_active
+		custom_effect_tooltip = sdj_japan.1.tt #political confusion occurs!
+	}
+}
+
+# Pre Emptive Corp - F vs D vs N
+country_event = {
+	id = sdj_japan.4
+	title = sdj_japan.4.t
+	desc = sdj_japan.4.d
+	picture = GFX_report_event_japanese_officers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.4
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = sdj_japan.4.a
+		add_political_power = -40
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.05
+						}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = sdj_japan.4.b
+		add_popularity = {
+						    ideology = neutrality
+						    popularity = 0.05
+						}
+		custom_effect_tooltip = sdj_japan.1.tt2
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = sdj_japan.4.c
+		add_political_power = 40
+		add_popularity = {
+						    ideology = fascism
+						    popularity = 0.05
+						}
+		custom_effect_tooltip = sdj_japan.1.tt2
+	}
+}
+
+# Pre Emptive Corp - Militarists Protest Civilian Government
+country_event = {
+	id = sdj_japan.5
+	title = sdj_japan.5.t
+	desc = sdj_japan.5.d
+	picture = GFX_report_event_japanese_officers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		NOT = { has_completed_focus = JAP_purge_the_militarists }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.5
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.5.a
+		add_ideas = JAP_militarists_protest
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.05
+						}
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = sdj_japan.5.b
+		add_popularity = {
+						    ideology = democratic
+						    popularity = -0.30
+						}
+		add_popularity = {
+						    ideology = fascism
+						    popularity = 0.30
+						}
+		set_country_flag = militarism_is_allowed
+		custom_effect_tooltip = sdj_japan.1.tt
+	}
+}
+
+# Pre Emptive Corp - Support from Zaibatsu (if Zaibatsu NF is completed)
+country_event = {
+	id = sdj_japan.6
+	title = sdj_japan.6.t
+	desc = sdj_japan.6.d
+	picture = GFX_report_event_japan_europe_pact
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_ally_with_the_zaibatsus
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.7
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.6.a
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 2 }
+	}
+}
+
+# Pre Emptive Corp - F vs D vs N
+country_event = {
+	id = sdj_japan.7
+	title = sdj_japan.7.t
+	desc = sdj_japan.7.d
+	picture = GFX_report_event_japanese_officers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_pre_emptive_coup }
+		focus_progress = {
+			focus = JAP_pre_emptive_coup
+			progress > 0.8
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = sdj_japan.7.a
+		add_political_power = -80
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.10
+						}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = sdj_japan.7.b
+		add_popularity = {
+						    ideology = neutrality
+						    popularity = 0.10
+						}
+		custom_effect_tooltip = sdj_japan.1.tt2
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = sdj_japan.7.c
+		add_political_power = 80
+		add_popularity = {
+						    ideology = fascism
+						    popularity = 0.10
+						}
+		custom_effect_tooltip = sdj_japan.1.tt2
+	}
+}
+
+# Pre Emptive Corp - Complete Focus: Complete Victory of Democracy
+country_event = {
+	id = sdj_japan.8
+	title = sdj_japan.8.t
+	desc = sdj_japan.8.d
+	picture = GFX_report_event_japanese_reply
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		OR = {
+			has_completed_focus = JAP_pre_emptive_coup
+			focus_progress = {
+				focus = JAP_pre_emptive_coup
+				progress > 0.99
+			}
+		}
+		JAP = {
+			democratic > 0.66
+			has_country_flag = military_minister_is_civilian
+			NOT = { has_country_flag = militarism_is_allowed }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.8.a
+		add_political_power = 200
+		add_stability = 0.1
+		if = {
+			limit = {
+				JAP = { has_idea = kijuro_shidehara }
+			}
+			add_political_power = 150
+		}
+	}
+}
+
+# Pre Emptive Corp - Complete Focus: Victory of Democracy
+country_event = {
+	id = sdj_japan.9
+	title = sdj_japan.9.t
+	desc = sdj_japan.9.d
+	picture = GFX_report_event_japanese_reply
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		OR = {
+			has_completed_focus = JAP_pre_emptive_coup
+			focus_progress = {
+				focus = JAP_pre_emptive_coup
+				progress > 0.99
+			}
+		}
+		JAP = {
+			democratic < 0.66
+			democratic > 0.5
+			has_country_flag = military_minister_is_civilian
+			NOT = { has_country_flag = militarism_is_allowed }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.9.a
+		add_political_power = 100
+		add_stability = 0.05
+		if = {
+			limit = {
+				JAP = { has_idea = kijuro_shidehara }
+			}
+			add_political_power = 100
+		}
+	}
+}
+
+# Pre Emptive Corp - Complete Focus: Bitter Victory of Democracy
+country_event = {
+	id = sdj_japan.10
+	title = sdj_japan.10.t
+	desc = sdj_japan.10.d
+	picture = GFX_report_event_japanese_reply
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		OR = {
+			has_completed_focus = JAP_pre_emptive_coup
+			focus_progress = {
+				focus = JAP_pre_emptive_coup
+				progress > 0.99
+			}
+		}
+		JAP = {
+			democratic < 0.5
+			democratic > 0.33
+			#has_country_flag = military_minister_is_civilian
+			#NOT = { has_country_flag = militarism_is_allowed }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.10.a
+		add_political_power = -150
+		add_stability = -0.15
+	}
+}
+
+# Pre Emptive Corp - Complete Focus: Defeat of Democracy
+country_event = {
+	id = sdj_japan.11
+	title = sdj_japan.11.t
+	desc = sdj_japan.11.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		OR = {
+			has_completed_focus = JAP_pre_emptive_coup
+			focus_progress = {
+				focus = JAP_pre_emptive_coup
+				progress > 0.99
+			}
+		}
+		JAP = {
+			democratic < 0.33
+			#has_country_flag = military_minister_is_civilian
+			#NOT = { has_country_flag = militarism_is_allowed }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	# TODO: pass to the other ideology root; DONE
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = sdj_japan.11.a
+		add_political_power = -300
+		add_stability = -0.30
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = sdj_japan.11.b
+		set_country_flag = giving_up_democracy
+		add_political_power = -50
+		add_stability = -0.1
+		add_popularity = {
+						    ideology = neutrality
+						    popularity = 0.5
+						}
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		complete_national_focus = JAP_support_the_kodoha_faction
+		complete_national_focus = JAP_showa_restoration
+		custom_effect_tooltip = sdj_japan.11.ttb
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = sdj_japan.11.c
+		set_country_flag = giving_up_democracy
+		add_political_power = -50
+		add_stability = -0.1
+		add_popularity = {
+						    ideology = neutrality
+						    popularity = 0.5
+						}
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		complete_national_focus = JAP_support_the_kodoha_faction
+		complete_national_focus = JAP_modern_shogunate
+		custom_effect_tooltip = sdj_japan.11.ttc
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = sdj_japan.11.e
+		set_country_flag = giving_up_democracy
+		add_political_power = -25
+		add_stability = -0.05
+		add_popularity = {
+						    ideology = fascism
+						    popularity = 0.5
+						}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		create_field_marshal = {
+			name = "Hisaichi Terauchi"
+			id = 801
+			picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
+			traits = { 
+				offensive_doctrine
+				JAP_samurai_lineage   # hakushaku
+				politically_connected
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		complete_national_focus = JAP_purge_the_kodoha_faction
+		custom_effect_tooltip = sdj_japan.11.tte
+	}
+}
+
+# Pre Emptive Corp - Confusion of Civilian Government
+country_event = {
+	id = sdj_japan.12
+	title = sdj_japan.12.t
+	desc = sdj_japan.12.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		OR = {
+			has_completed_focus = JAP_pre_emptive_coup
+			focus_progress = {
+				focus = JAP_pre_emptive_coup
+				progress > 0.99
+			}
+		}
+		JAP = {
+			#democratic < 0.33
+			OR = {
+				NOT = { has_country_flag = military_minister_is_civilian }
+				has_country_flag = militarism_is_allowed
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sdj_japan.12.a
+		add_timed_idea = { idea = JAP_confused_civilian_government days = 365 } 
+	}
+}
+

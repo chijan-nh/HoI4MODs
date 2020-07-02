@@ -1126,6 +1126,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+
+			available = {
+				NOT = { has_country_flag = giving_up_democracy }
+			}
 			
 			removal_cost = -1
 
@@ -1233,7 +1237,7 @@ ideas = {
 			}
 		}
 
-		#added_by_this_mod
+		#added_by_this_mod(SDJ)
 
 		JAP_jap_intelligence_tie = {
 			allowed = {
@@ -1256,6 +1260,7 @@ ideas = {
 				intelligence_agency_defense = 2
 				resistance_target = -0.2
 				compliance_gain = 0.1
+				recon_factor = 0.15
 			}
 		}
 
@@ -1280,6 +1285,7 @@ ideas = {
 				intelligence_agency_defense = 2
 				resistance_target = -0.2
 				compliance_gain = 0.1
+				recon_factor = 0.15
 			}
 		}
 
@@ -1576,6 +1582,49 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.10
+			}
+		}
+
+		JAP_militarists_protest = {
+			allowed = {
+				allowed = no
+			}
+
+			available = {
+				NOT = { has_country_flag = giving_up_democracy }
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_problems
+
+			modifier = {
+				planning_speed = -0.25
+				max_planning = -0.25
+				army_org_factor = -0.25
+				fascism_drift = 0.15
+				neutrality_drift = 0.15
+			}
+		}
+
+		JAP_confused_civilian_government = {
+			allowed = {
+				allowed = no
+			}
+
+			available = {
+				NOT = { has_country_flag = giving_up_democracy }
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				stability_weekly = -0.02
+				war_support_weekly = -0.02
+				fascism_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 	}
@@ -2317,6 +2366,17 @@ ideas = {
 						
 			allowed = {
 				original_tag = JAP
+				OR = {
+					NOT = { has_country_flag = military_minister_is_civilian }
+					has_country_flag = giving_up_democracy
+				}
+			}
+
+			available = {
+				OR = {
+					NOT = { has_country_flag = military_minister_is_civilian }
+					has_country_flag = giving_up_democracy
+				}
 			}
 						
 			research_bonus = {
