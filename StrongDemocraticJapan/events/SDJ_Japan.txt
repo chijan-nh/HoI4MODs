@@ -82,13 +82,13 @@ country_event = {
 		name = sdj_japan.3.a
 		custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = hisaichi_terauchi
-		custom_effect_tooltip = remove_chief_of_army
-		remove_unit_leader = 801 #terauchi hisaichi
+		#custom_effect_tooltip = remove_chief_of_army
+		#remove_unit_leader = 801 #terauchi hisaichi
 		set_country_flag = military_minister_is_civilian
 		JAP_interservice_rivalry_towards_navy = yes
 		add_stability = -0.1
 		add_war_support = -0.1
-		add_political_power = -50
+		add_political_power = -75
 		add_popularity = {
 						    ideology = democratic
 						    popularity = 0.05
@@ -114,7 +114,7 @@ country_event = {
 			factor = 0
 		}
 		name = sdj_japan.3.c
-		add_political_power = 50
+		add_political_power = 75
 		add_popularity = {
 						    ideology = fascism
 						    popularity = 0.15
@@ -151,7 +151,7 @@ country_event = {
 			factor = 90
 		}
 		name = sdj_japan.4.a
-		add_political_power = -40
+		add_political_power = -30
 		add_popularity = {
 						    ideology = democratic
 						    popularity = 0.05
@@ -181,7 +181,7 @@ country_event = {
 			}
 		}
 		name = sdj_japan.4.c
-		add_political_power = 40
+		add_political_power = 30
 		add_popularity = {
 						    ideology = fascism
 						    popularity = 0.05
@@ -231,14 +231,15 @@ country_event = {
 		name = sdj_japan.5.b
 		add_popularity = {
 						    ideology = democratic
-						    popularity = -0.30
+						    popularity = -0.20
 						}
 		add_popularity = {
 						    ideology = fascism
-						    popularity = 0.30
+						    popularity = 0.20
 						}
 		set_country_flag = militarism_is_allowed
 		custom_effect_tooltip = sdj_japan.1.tt
+		custom_effect_tooltip = sdj_japan.1.tt2
 	}
 }
 
@@ -302,7 +303,7 @@ country_event = {
 			factor = 90
 		}
 		name = sdj_japan.7.a
-		add_political_power = -80
+		add_political_power = -60
 		add_popularity = {
 						    ideology = democratic
 						    popularity = 0.10
@@ -332,7 +333,7 @@ country_event = {
 			}
 		}
 		name = sdj_japan.7.c
-		add_political_power = 80
+		add_political_power = 60
 		add_popularity = {
 						    ideology = fascism
 						    popularity = 0.10
@@ -363,6 +364,9 @@ country_event = {
 			democratic > 0.66
 			has_country_flag = military_minister_is_civilian
 			NOT = { has_country_flag = militarism_is_allowed }
+			NOT = { has_country_flag = victory_democracy }
+			NOT = { has_country_flag = bitter_victory_democracy }
+			NOT = { has_country_flag = defeat_democracy }
 		}
 	}
 
@@ -377,6 +381,7 @@ country_event = {
 		name = sdj_japan.8.a
 		add_political_power = 200
 		add_stability = 0.1
+		set_country_flag = complete_victory_democracy
 		if = {
 			limit = {
 				JAP = { has_idea = kijuro_shidehara }
@@ -409,6 +414,9 @@ country_event = {
 			democratic > 0.5
 			has_country_flag = military_minister_is_civilian
 			NOT = { has_country_flag = militarism_is_allowed }
+			NOT = { has_country_flag = complete_victory_democracy }
+			NOT = { has_country_flag = bitter_victory_democracy }
+			NOT = { has_country_flag = defeat_democracy }
 		}
 	}
 
@@ -421,8 +429,9 @@ country_event = {
 			factor = 100
 		}
 		name = sdj_japan.9.a
-		add_political_power = 100
+		add_political_power = 120
 		add_stability = 0.05
+		set_country_flag = victory_democracy
 		if = {
 			limit = {
 				JAP = { has_idea = kijuro_shidehara }
@@ -455,6 +464,9 @@ country_event = {
 			democratic > 0.33
 			#has_country_flag = military_minister_is_civilian
 			#NOT = { has_country_flag = militarism_is_allowed }
+			NOT = { has_country_flag = complete_victory_democracy }
+			NOT = { has_country_flag = victory_democracy }
+			NOT = { has_country_flag = defeat_democracy }
 		}
 	}
 
@@ -467,8 +479,9 @@ country_event = {
 			factor = 100
 		}
 		name = sdj_japan.10.a
-		add_political_power = -150
-		add_stability = -0.15
+		add_political_power = -100
+		add_stability = -0.05
+		set_country_flag = bitter_victory_democracy
 	}
 }
 
@@ -494,6 +507,9 @@ country_event = {
 			democratic < 0.33
 			#has_country_flag = military_minister_is_civilian
 			#NOT = { has_country_flag = militarism_is_allowed }
+			NOT = { has_country_flag = complete_victory_democracy }
+			NOT = { has_country_flag = victory_democracy }
+			NOT = { has_country_flag = bitter_victory_democracy }
 		}
 	}
 
@@ -507,7 +523,8 @@ country_event = {
 		}
 		name = sdj_japan.11.a
 		add_political_power = -300
-		add_stability = -0.30
+		add_stability = -0.20
+		set_country_flag = defeat_democracy
 	}
 	option = {
 		ai_chance = {
@@ -515,8 +532,15 @@ country_event = {
 		}
 		name = sdj_japan.11.b
 		set_country_flag = giving_up_democracy
+		if = {
+			limit = {
+				has_idea = JAP_guide_the_zaibatsus
+			}
+			remove_ideas = JAP_guide_the_zaibatsus
+		}
 		add_political_power = -50
 		add_stability = -0.1
+		set_country_flag = defeat_democracy
 		add_popularity = {
 						    ideology = neutrality
 						    popularity = 0.5
@@ -532,8 +556,15 @@ country_event = {
 		}
 		name = sdj_japan.11.c
 		set_country_flag = giving_up_democracy
+		if = {
+			limit = {
+				has_idea = JAP_guide_the_zaibatsus
+			}
+			remove_ideas = JAP_guide_the_zaibatsus
+		}
 		add_political_power = -50
 		add_stability = -0.1
+		set_country_flag = defeat_democracy
 		add_popularity = {
 						    ideology = neutrality
 						    popularity = 0.5
@@ -549,28 +580,35 @@ country_event = {
 		}
 		name = sdj_japan.11.e
 		set_country_flag = giving_up_democracy
+		if = {
+			limit = {
+				has_idea = JAP_guide_the_zaibatsus
+			}
+			remove_ideas = JAP_guide_the_zaibatsus
+		}
 		add_political_power = -25
 		add_stability = -0.05
+		set_country_flag = defeat_democracy
 		add_popularity = {
 						    ideology = fascism
 						    popularity = 0.5
 						}
 		set_politics = { ruling_party = fascism elections_allowed = no }
-		create_field_marshal = {
-			name = "Hisaichi Terauchi"
-			id = 801
-			picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
-			traits = { 
-				offensive_doctrine
-				JAP_samurai_lineage   # hakushaku
-				politically_connected
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
-		}
+		#create_field_marshal = {
+		#	name = "Hisaichi Terauchi"
+		#	id = 801
+		#	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
+		#	traits = { 
+		#		offensive_doctrine
+		#		JAP_samurai_lineage   # hakushaku
+		#		politically_connected
+		#	}
+		#	skill = 4
+		#	attack_skill = 4
+		#	defense_skill = 4
+		#	planning_skill = 3
+		#	logistics_skill = 2
+		#}
 		complete_national_focus = JAP_purge_the_kodoha_faction
 		custom_effect_tooltip = sdj_japan.11.tte
 	}
@@ -604,7 +642,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 7
+		days = 14
 	}
 	option = {
 		ai_chance = {
