@@ -7,7 +7,7 @@ MODs for Hearts of Iron 4 created by chijan-nh (Steam name: chijan).
 
 * MOD name: +ENG_StrongDemocraticJapan
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=2123909437
-* Version 1.9.*
+* Version 1.10.*
 * Note: The StrongDemocraticJapan mod must be activated simultaneously.
 
 This is a translation mod for StrongDemocraticJapan (as mentioned below).
@@ -27,11 +27,20 @@ For instance,
 Facist can make your own empire great more easyly since the cost of annex in peace conference is less than vanila.
 Democracy has strongest economic and research buff since they are freedom. They can make puppets.
 
+### ImprovePuppetFactory
+
+* MOD name: ImprovePuppetFactory
+* Available at:
+* Version: 1.10.*
+* Note:
+
+Increase the number of factories which are obtained from your puppet.
+
 ### JP_puppeting_ussr_nonew
 
 * MOD name: +JP Puppetting the USSR (no new states)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1763817482
-* Version: 1.7.*
+* Version: 1.10.*
 * Note: WIP.
 
 Translation MOD for Puppetting the USSR (no new states) in Japanese.
@@ -41,7 +50,7 @@ Original MOD is available at https://steamcommunity.com/sharedfiles/filedetails/
 
 * MOD name: StrongDemocraticJapan
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=2120228453
-* Version: 1.9.*
+* Version: 1.10.*
 * Note: 
 
 The Democratic Japan Root is boring in the vanilla since its NFs are weak and few.
@@ -53,7 +62,7 @@ The English translation mod is as +ENG_StrongDemocraticJapan.
 
 * MOD name: FixAroundMaginot
 * Available at:
-* Version: 1.9.*
+* Version: 1.10.*
 * Note:
 
 In the vanilla, Nazi-Geramny attacks the Netherlands even if it does not have war with France. If France is not enemy for Germany, why they avoid the Maginot line??
@@ -64,7 +73,7 @@ In this mod, the "Around the Maginot" NF cannot be started if Germany does not h
 
 * MOD name: FixJapanSouthDoctrine
 * Available at:
-* Version: 1.9.*
+* Version: 1.10.*
 * Note:
 
 The vanilla has low reproducibility of the Southward Expansion Theory of the Empire of Japan.
@@ -78,7 +87,7 @@ and Japan will not declare war on the southern resource areas if they are neutra
 
 * MOD name: KotonohaAoi_Voice(aide)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005162
-* Version: 1.9.*
+* Version: 1.10.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉葵ちゃんの声になります．
@@ -88,7 +97,7 @@ and Japan will not declare war on the southern resource areas if they are neutra
 
 * MOD name: KotonohaAkane_Voice(adjutant)
 * Available at: https://steamcommunity.com/sharedfiles/filedetails/?id=1524005381
-* Version: 1.9.*
+* Version: 1.10.*
 * Note: Japanese only.
 
 ゲーム中の効果音の一部がボイスロイドの琴葉茜ちゃんの声になります．

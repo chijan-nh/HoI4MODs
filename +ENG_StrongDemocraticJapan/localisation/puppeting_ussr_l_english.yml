@@ -194,9 +194,6 @@
  # VICTORY_POINTS_12333:0 "Ashkhabad"
  # VICTORY_POINTS_11686:0 "Kishinev"
  
- STATE_788:0 "Krasnoyarsk"
- STATE_789:0 "Nakhodka"
- 
  RUS_communism:0 "Russian Soviet Federative Socialist Republic"
  RUS_communism_DEF:0 "The Russian Soviet Federative Socialist Republic"
  RUS_democratic:0 "Russian Federation"

@@ -1,0 +1,26 @@
+﻿l_english:
+ STATE_568:0 "エニセイ右岸"
+ STATE_586:0 "ビシュケク"
+ 
+ FIN_SOV_communism_autonomy_dominion:0 "フィンランド人民共和国"
+ FIN_SOV_communism_autonomy_colony:0 "フィンランド社会主義共和国"
+ FIN_SOV_communism_autonomy_puppet:0 "カレリア＝フィンランド自治SSR"
+ FIN_SOV_communism_autonomy_integrated_puppet:0 "カレリア＝フィンランドSSR"
+ FIN_SOV_communism_autonomy_dominion_DEF:0 "フィンランド人民共和国"
+ FIN_SOV_communism_autonomy_colony_DEF:0 "フィンランド社会主義共和国"
+ FIN_SOV_communism_autonomy_puppet_DEF:0 "カレリア＝フィンランド自治SSR"
+ FIN_SOV_communism_autonomy_integrated_puppet_DEF:0 "カレリア＝フィンランドSSR"
+ 
+ SOV_fascism:0 "ロシア帝国"
+ SOV_fascism_DEF:0 "ロシア帝国"
+ SOV_democratic:0 "主権国連合"
+ SOV_democratic_DEF:0 "主権国連合"
+ SOV_neutrality:0 "ロシア国"
+ SOV_neutrality_DEF:0 "ロシア国"
+ SOV_communism:0 "ソビエト連邦"
+ SOV_communism_DEF:0 "ソビエト連邦"
+ SOV_fascism_ADJ:0 "ロシア"
+ SOV_democratic_ADJ:0 "主権連"
+ 
+ VICTORY_POINTS_9417:0 "ロストフ＝ナド＝ヌ""
+ 

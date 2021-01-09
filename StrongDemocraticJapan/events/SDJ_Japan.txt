@@ -50,6 +50,10 @@ country_event = {
 		name = sdj_japan.2.a
 		add_offsite_building = { type = industrial_complex level = 2 }
 		add_offsite_building = { type = arms_factory level = 2 }
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.01
+						}
 	}
 }
 
@@ -77,13 +81,13 @@ country_event = {
 
 	option = { #purge terauchi hisaichi
 		ai_chance = {
-			factor = 80
+			factor = 98
 		}
 		name = sdj_japan.3.a
 		custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = hisaichi_terauchi
 		#custom_effect_tooltip = remove_chief_of_army
-		#remove_unit_leader = 801 #terauchi hisaichi
+		#remove_unit_leader = 801 #terauchi hisaichi #WTF! not work
 		set_country_flag = military_minister_is_civilian
 		JAP_interservice_rivalry_towards_navy = yes
 		add_stability = -0.1
@@ -99,7 +103,7 @@ country_event = {
 	}
 	option = { #remain military minister allows not active general
 		ai_chance = {
-			factor = 20
+			factor = 1
 		}
 		name = sdj_japan.3.b
 		add_popularity = {
@@ -111,7 +115,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 		name = sdj_japan.3.c
 		add_political_power = 75
@@ -273,6 +277,10 @@ country_event = {
 		name = sdj_japan.6.a
 		add_offsite_building = { type = industrial_complex level = 2 }
 		add_offsite_building = { type = arms_factory level = 2 }
+		add_popularity = {
+						    ideology = democratic
+						    popularity = 0.01
+						}
 	}
 }
 

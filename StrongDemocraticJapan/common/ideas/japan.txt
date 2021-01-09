@@ -551,11 +551,26 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 3
 				send_volunteer_divisions_required = -1
-				target_modifier = {
-					tag = SOV
-					attack_bonus_against = 0.15
-					defense_bonus_against = 0.15
-				}
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 
@@ -1574,6 +1589,7 @@ ideas = {
 				    group = mobilization_laws
 				}
 				has_government = democratic
+				NOT = { has_completed_focus = JAP_supremacy_of_will }
 			}
 
 			removal_cost = -1
