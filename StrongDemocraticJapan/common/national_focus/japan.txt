@@ -4671,7 +4671,7 @@
 				CHI = {
 					annex_country = {
 					    target = MAN
-					    transfer_troops = no
+					    transfer_troops = yes
 					}
 				}
 				add_manpower = 300000
@@ -4686,13 +4686,17 @@
 				CHI = {
 					annex_country = {
 						target = MEN
-						transfer_troops = no
+						transfer_troops = yes
 					}
 				}
 				add_manpower = 50000
 			}
 			CHI = {
 				transfer_state = 609
+				remove_state_core = 524
+			}
+			524 = {
+				add_compliance = 50
 			}
 			unlock_decision_tooltip = JAP_return_manchuria
 			custom_effect_tooltip = JAP_liberate_manchuria_tt
@@ -4743,6 +4747,11 @@
 			CHI = {
 				add_ai_strategy = {
 					type = befriend
+					id = "JAP"
+					value = 200
+				}
+				add_ai_strategy = {
+					type = alliance
 					id = "JAP"
 					value = 200
 				}
@@ -5491,6 +5500,11 @@
 						id = "JAP"
 						value = 200
 					}
+					add_ai_strategy = {
+						type = alliance
+						id = "JAP"
+						value = 200
+					}
 				}
 				BLR = {
 					set_popularities = {
@@ -5508,10 +5522,20 @@
 						id = "JAP"
 						value = 200
 					}
+					add_ai_strategy = {
+						type = alliance
+						id = "JAP"
+						value = 200
+					}
 				}
 				MSK = {
 					add_ai_strategy = {
 						type = befriend
+						id = "JAP"
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
 						id = "JAP"
 						value = 200
 					}
@@ -5522,10 +5546,20 @@
 						id = "JAP"
 						value = 200
 					}
+					add_ai_strategy = {
+						type = alliance
+						id = "JAP"
+						value = 200
+					}
 				}
 				TKS = {
 					add_ai_strategy = {
 						type = befriend
+						id = "JAP"
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
 						id = "JAP"
 						value = 200
 					}
@@ -5536,10 +5570,20 @@
 						id = "JAP"
 						value = 200
 					}
+					add_ai_strategy = {
+						type = alliance
+						id = "JAP"
+						value = 200
+					}
 				}
 				PRM = {
 					add_ai_strategy = {
 						type = befriend
+						id = "JAP"
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
 						id = "JAP"
 						value = 200
 					}
@@ -5617,6 +5661,11 @@
 				set_state_name = JAP_integrate_karafuto_state_name
 				remove_core_of = SOV
 				add_extra_state_shared_building_slots = 4
+			}
+			add_resource = {
+			    type = oil
+			    amount = 8
+			    state = 655
 			}
 		}
 	}
@@ -7693,6 +7742,7 @@
 
 		completion_reward = {
 			add_ideas = JAP_rapid_economic_growth_focus
+			add_offsite_building = { type = synthetic_refinery level = 3 }
 		}
 	}
 
