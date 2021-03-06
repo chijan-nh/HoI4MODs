@@ -3874,7 +3874,7 @@
 		y = 1
 		relative_position_id = JAP_secret_weapons
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -4200,7 +4200,7 @@
 		y = 1
 		relative_position_id = JAP_prepare_for_german_democratization
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 10
@@ -4829,6 +4829,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			## democratic boost for MAN
 			if = {
 				limit = {
 					MAN = {
@@ -4839,7 +4840,7 @@
 				MAN = { 
 					add_popularity = {
 					    ideology = democratic
-					    popularity = 0.30
+					    popularity = 0.35
 					}
 					add_timed_idea = { idea = democratic_influence days = 1460 }
 				}
@@ -4875,7 +4876,7 @@
 					expire = 0
 				}
 			}
-
+			## democratic boost for MEN
 			if = {
 				limit = {
 					MEN = {
@@ -4886,7 +4887,7 @@
 				MEN = {
 					add_popularity = {
 					    ideology = democratic
-					    popularity = 0.30
+					    popularity = 0.35
 					}
 					add_timed_idea = { idea = democratic_influence days = 1460 }
 				}
@@ -4920,6 +4921,22 @@
 					target = MEN
 					type = puppet_wargoal_focus
 					expire = 0
+				}
+			}
+
+			if = {
+				limit = {
+					MEN = {
+						exists = yes
+						is_puppet_of = JAP
+					}
+				}
+				MEN = {
+					add_state_core = 330
+					add_state_core = 621
+					add_state_core = 746
+					add_state_core = 616
+					add_state_core = 756
 				}
 			}
 
@@ -5102,7 +5119,7 @@
 		y = 1
 		relative_position_id = JAP_full_sovereignty_for_the_philippines
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5144,7 +5161,7 @@
 		y = 1
 		relative_position_id = JAP_anti_communist_bulwark
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5292,7 +5309,7 @@
 		y = 1
 		relative_position_id = JAP_finland_promise
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 10
@@ -5598,7 +5615,8 @@
 			}
 			655 = {
 				set_state_name = JAP_integrate_karafuto_state_name
-				add_extra_state_shared_building_slots = 3
+				remove_core_of = SOV
+				add_extra_state_shared_building_slots = 4
 			}
 		}
 	}

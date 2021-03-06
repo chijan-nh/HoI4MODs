@@ -1318,10 +1318,10 @@ ideas = {
 
 			modifier = {
 				convoy_escort_efficiency = 0.25
-				spotting_chance = 0.25
-				naval_hit_chance = 0.05
-				naval_coordination = 0.05
-				navy_submarine_detection_factor = 0.25
+				#spotting_chance = 0.25
+				#naval_hit_chance = 0.05
+				#naval_coordination = 0.05
+				#navy_submarine_detection_factor = 0.25
 				navy_max_range_factor = 0.25
 				naval_equipment_upgrade_xp_cost = -0.5
 				navy_refit_speed = 0.5
