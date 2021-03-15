@@ -6251,17 +6251,26 @@
 				    ideology = fascism
 				    popularity = 0.05
 				}
+				add_ai_strategy = {
+					type = befriend
+					id = "JAP"
+					value = -50
+				}
 			}
-			set_autonomy = {
-				target = BRM
-				autonomy_state = autonomy_supervised_state
-				freedom_level = 0.50
+			hidden_effect = {
+				set_autonomy = {
+					target = BRM
+					autonomy_state = autonomy_supervised_state
+					freedom_level = 0.50
+				}
+				set_autonomy = {
+					target = BAN
+					autonomy_state = autonomy_supervised_state
+					freedom_level = 0.50
+				}
 			}
-			set_autonomy = {
-				target = BAN
-				autonomy_state = autonomy_supervised_state
-				freedom_level = 0.50
-			}
+			custom_effect_tooltip = JAP_release_brm_and_ban_autonomy_tt
+			custom_effect_tooltip = JAP_release_brm_and_ban_ENG_tt
 			RAJ = {
 				if = {
 					limit = {
@@ -7021,7 +7030,6 @@
 					add_state_core = 364
 					add_state_core = 365
 					add_state_core = 366
-					add_state_core = 353
 					add_state_core = 261
 					add_state_core = 369
 					add_state_core = 368
@@ -7120,7 +7128,11 @@
 				add_offsite_building = { type = arms_factory level = 4 }
 				add_offsite_building = { type = industrial_complex level = 12 }
 			}
-			set_autonomy = { target = MAN autonomy_state = autonomy_dominion }
+			custom_effect_tooltip = JAP_the_fugu_plan_autonomy_tt
+			custom_effect_tooltip = JAP_the_fugu_plan_SOV_tt
+			hidden_effect = {
+				set_autonomy = { target = MAN autonomy_state = autonomy_dominion }
+			}
 		}
 	}
 
@@ -7742,7 +7754,8 @@
 
 		completion_reward = {
 			add_ideas = JAP_rapid_economic_growth_focus
-			add_offsite_building = { type = synthetic_refinery level = 3 }
+			add_offsite_building = { type = synthetic_refinery level = 4 }
+			add_offsite_building = { type = fuel_silo level = 2 }
 		}
 	}
 
